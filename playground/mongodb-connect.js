@@ -1,3 +1,5 @@
+// DOCUMENTAÇÃO OFICIAL DA API: http://mongodb.github.io/node-mongodb-native/3.1/api/
+
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb');
 
