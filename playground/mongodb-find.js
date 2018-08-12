@@ -8,14 +8,12 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', (err, db) => {
    }
    console.log('Connected to MongoDB Server');
    
-   db.collection('Users').find({
-      name: 'Italo'
-   }).toArray().then((docs) => {
-      console.log('To-dos ');
+   db.collection('Users').find({name: 'Italo'}).toArray().then((docs) => {
+      console.log('Users: ');
       console.log(JSON.stringify(docs, undefined, 2))
       
    }, (err) => {
-      console.log('Unable to fetch to-dos', err)
+      console.log('Unable to fetch users', err)
    })
 
 
