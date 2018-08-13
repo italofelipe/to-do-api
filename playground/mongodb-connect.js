@@ -22,7 +22,7 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', (err, db) => { // Esse 
       console.log(JSON.stringify(result.ops));
       
    });
-   
+    
 
    db.collection('Users').insertOne({
       name: 'Italo',
